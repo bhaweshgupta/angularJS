@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html ng-app="myModule">
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<script src="Scripts/script1.js"></script>
+<body ng-controller="myController">
+
+<table>
+   <thead>
+    <tr>
+        <th>firstname</th>
+        <th>secondname</th>
+        <th>gender</th>
+    </tr>
+    </thead>
+    <tbody>
+        <tr ng-repeat="emp in employees">
+            <td>{{emp.firstname}}</td>
+            <td>{{emp.lastname}}</td>
+            <td>{{emp.gender}}</td>
+
+        </tr>
+    </tbody>
+</table>  
+    
+
+
+<!--<div ng-controller="myController">
+
+<div>{{employee.firstname}}</div>
+<div>{{employee.lastname}}</div>
+<div>{{employee.gender}}</div>-->
+<!--<div>enter firstname:<input type="text" ng-model="employee.firstname">-->
+<!--<div>enter greeting msg:<input type="text"ng-model="employee.greeting">-->
+<!--<div>{{employee.greeeting}}<div>-->
+<!--<div><img ng-src="{{employee.image}}"></div>-->
+
+
+</div>
+
+</body>
+</html>
+
