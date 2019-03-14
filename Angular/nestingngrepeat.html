@@ -5,16 +5,18 @@
 <body ng-app="myModule">
 <div ng-controller="myController">
 <ul> 
-<li ng-repeat="country in countries">{{country.name}}
+<li ng-repeat="country in countries"ng-init="parentIndex=$index">{{country.name}}          {{$index}}
     <ol>
-        <li ng-repeat="club in country.clubs">{{club.name}}</li>
+        <li ng-repeat="club in country.clubs">{{club.name}}     {{$index}}   {{parentIndex}}</li>
     </ol>
    </li> 
 </ul>    
     
-
+<div ng-include="'EmployeeList.html'"></div>
 
 </div>
+<br/>
+<br/>
 
 
 </body>
